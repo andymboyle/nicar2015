@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  	<!-- This loads the jQuery -->
+  	<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+  </head>
+  <body>
+    <div id="findMe">This is a basic div.</div>
+  </body>
+  <script>
+    $(document).ready(function() {
+      var thisArray = ['Andy', 'Jen', 'Mildred']
+      $.each(thisArray, function( index, value ) {
+        alert(value + ' is really cool.');
+      });
+    });
+  </script>
+</html>
