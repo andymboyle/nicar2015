@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  	<!-- This loads the jQuery -->
+  	<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+  </head>
+  <body>
+    <div id="findMe">This is a basic div.</div>
+  </body>
+  <script>
+    $(document).ready(function() {
+      var fullName = "Andy Boyle";
+      var myAge = 30;
+      if (myAge < 29) {
+      	alert("You're younger than 29, " + fullName)
+      } else if (myAge > 29) {
+      	alert("You're older than or equal to 29, " + fullName)
+      }
+    });
+  </script>
+</html>
