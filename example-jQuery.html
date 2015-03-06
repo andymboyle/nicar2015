@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  	<!-- This loads the jQuery -->
+  	<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+  </head>
+  <body>
+    <div id="findMe">This is a basic div.</div>
+
+    <div id="otherDiv">
+      <p class="makeRed">Here is some nonsense to put right here.</p>
+    </div>
+
+    <div id="yellowDiv">What color could this become?</div>
+  </body>
+  <script>
+    $(document).ready(function() {
+      $("#findMe").mouseover(function() {
+      	console.log('moused over');
+      });
+
+      $("#yellowDiv").mouseover(function() {
+        $("#yellowDiv").css("background-color", "yellow");
+      });
+
+      $(".makeRed").click(function() {
+      	$(".makeRed").css("color", "red");
+      });
+    });
+  </script>
+</html>
